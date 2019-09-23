@@ -1,0 +1,24 @@
+Package: biscuiteerData
+Type: Package
+Title: Data Package for Biscuiteer
+Description: Contains default datasets used by the Bioconductor
+             package biscuiteer.
+Version: 0.99.01
+Date: 2019-09-18
+Author: Tim Triche, Jr. [aut, cre], Wanding Zhou [aut], Ben Johnson [aut],
+        Jacob Morrison [aut], Lyong Heo [aut]
+Maintainer: "Tim Triche, Jr." <tim.triche@gmail.com>
+License: GPL-3
+Depends: R (>= 3.6.0),
+         ExperimentHub
+Imports: AnnotationHub,
+         utils,
+         curl
+Suggests: knitr,
+          biscuiteer
+LazyData: true
+biocViews: ExperimentData, Genome, Homo_sapiens_Data
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+Roxygen: list(markdown = TRUE)
+VignetteBuilder: knitr

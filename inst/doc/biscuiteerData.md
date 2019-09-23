@@ -1,0 +1,70 @@
+---
+title: "BiscuiteerData User Guide"
+data: "20 September 2019"
+package: "biscuiteerData 0.99.1"
+output:
+  BiocStyle::html_document:
+    highlight: pygments
+    toc_float: true
+    fig_width: 8
+    fig_height: 6
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Biscuiteer User Guide}
+  %\VignetteEncoding[utf8]{inputenc}
+---
+
+# BiscuiteerData
+
+`biscuiteerData` is a complementary package to the Bioconductor package
+`biscuiteer`. It contains a handful of datasets to be used when running
+functions in `biscuiteer`.
+
+# Quick Start
+
+## Installing
+
+From Bioconductor,
+
+```r
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("biscuiteerData")
+```
+
+A development version is available on GitHub and can be installed via:
+
+```r
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("trichelab/biscuiteerData")
+```
+
+# Usage
+
+`biscuiteerData` data is accessible using the `biscuiteerDataGet` function:
+
+```r
+library(biscuiteerData)
+PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19")
+```
+
+A list of the titles for the available data can be retrieved via:
+
+```r
+biscuiteerDataList()
+```
+
+A list of all versions (where the versions are the dates uploaded) is produced
+via:
+
+```r
+biscuiteerDataListDates()
+```
+
+An older version of the data can be retrieved using the `dateAdded` argument of
+`biscuiteerDataGet`:
+
+```r
+PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19", dateAdded = "OLD-DATE")
+```
