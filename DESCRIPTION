@@ -17,7 +17,7 @@ Imports: AnnotationHub,
 Suggests: knitr,
           biscuiteer
 LazyData: true
-biocViews: ExperimentData, Genome, Homo_sapiens_Data
+biocViews: ExperimentHub, ExperimentData, Genome, Homo_sapiens_Data
 Encoding: UTF-8
 RoxygenNote: 6.1.1
 Roxygen: list(markdown = TRUE)
