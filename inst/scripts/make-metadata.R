@@ -8,7 +8,7 @@ zhou_hg19 <- c("Zhou_solo_WCGW_inCommonPMDs.hg19.rda",
                "hg19",
                "BED",
                "http://zwdzwd.io/pmd/solo_WCGW_inCommonPMDs_hg19.bed.gz",
-               "19 September 2019",
+               "25 September 2019",
                "Homo sapiens",
                "9606",
                "TRUE",
@@ -16,9 +16,7 @@ zhou_hg19 <- c("Zhou_solo_WCGW_inCommonPMDs.hg19.rda",
                "Tim Triche, Jr. <tim.triche@gmail.com>",
                "GRanges",
                "Rda",
-               "biscuiteerData/v0.99.1/Zhou_solo_WCGW_inCommonPMDs.hg19.rda",
-               "",
-               ""
+               "biscuiteerData/Zhou_solo_WCGW_inCommonPMDs.hg19.rda"
               )
 pmd_hg19 <- c("PMDs.hg19.rda",
               "Common PMD locations in hg19 genome",
@@ -26,7 +24,7 @@ pmd_hg19 <- c("PMDs.hg19.rda",
               "hg19",
               "BED",
               "http://zwdzwd.io/pmd/PMD_coordinates_hg19.bed.gz",
-              "19 September 2019",
+              "25 September 2019",
               "Homo sapiens",
               "9606",
               "TRUE",
@@ -34,9 +32,7 @@ pmd_hg19 <- c("PMDs.hg19.rda",
               "Tim Triche, Jr. <tim.triche@gmail.com>",
               "GRanges",
               "Rda",
-              "biscuiteerData/v0.99.1/PMDs.hg19.rda",
-              "",
-              ""
+              "biscuiteerData/PMDs.hg19.rda"
              )
 # hg38
 zhou_hg38 <- c("Zhou_solo_WCGW_inCommonPMDs.hg38.rda",
@@ -45,7 +41,7 @@ zhou_hg38 <- c("Zhou_solo_WCGW_inCommonPMDs.hg38.rda",
                "hg38",
                "BED",
                "http://zwdzwd.io/pmd/solo_WCGW_inCommonPMDs_hg38.bed.gz",
-               "19 September 2019",
+               "25 September 2019",
                "Homo sapiens",
                "9606",
                "TRUE",
@@ -53,9 +49,7 @@ zhou_hg38 <- c("Zhou_solo_WCGW_inCommonPMDs.hg38.rda",
                "Tim Triche, Jr. <tim.triche@gmail.com>",
                "GRanges",
                "Rda",
-               "biscuiteerData/v0.99.1/Zhou_solo_WCGW_inCommonPMDs.hg38.rda",
-               "",
-               ""
+               "biscuiteerData/Zhou_solo_WCGW_inCommonPMDs.hg38.rda"
               )
 pmd_hg38 <- c("PMDs.hg38.rda",
               "Common PMD locations in hg38 genome",
@@ -63,7 +57,7 @@ pmd_hg38 <- c("PMDs.hg38.rda",
               "hg38",
               "BED",
               "http://zwdzwd.io/pmd/PMD_coordinates_hg38.bed.gz",
-              "19 September 2019",
+              "25 September 2019",
               "Homo sapiens",
               "9606",
               "TRUE",
@@ -71,9 +65,7 @@ pmd_hg38 <- c("PMDs.hg38.rda",
               "Tim Triche, Jr. <tim.triche@gmail.com>",
               "GRanges",
               "Rda",
-              "biscuiteerData/v0.99.1/PMDs.hg38.rda",
-              "",
-              ""
+              "biscuiteerData/PMDs.hg38.rda"
              )
 
 metadata <- rbind(metadata, zhou_hg19, stringsAsFactors=FALSE)
@@ -95,9 +87,7 @@ colnames(metadata) <- c("Title",
                         "Maintainer",
                         "RDataClass",
                         "DispatchClass",
-                        "RDataPath",
-                        "Tags",
-                        "Notes"
+                        "RDataPath"
                        )
 
 metadata$BiocVersion <- as.numeric(metadata$BiocVersion)
