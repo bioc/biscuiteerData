@@ -41,24 +41,24 @@ BiocManager::install("trichelab/biscuiteerData")
 # Usage
 
 `biscuiteerData` data is accessible using the `biscuiteerDataGet` function:
-```{r, eval=FALSE}
+```{r}
 library(biscuiteerData)
-PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19")
+PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19.rda")
 ```
 
 A list of the titles for the available data can be retrieved via:
-```{r, eval=FALSE}
+```{r}
 biscuiteerDataList()
 ```
 
 A list of all versions (where the versions are the dates uploaded) is produced
 via:
-```{r, eval=FALSE}
+```{r}
 biscuiteerDataListDates()
 ```
 
 An older version of the data can be retrieved using the `dateAdded` argument of
 `biscuiteerDataGet`:
-```{r, eval=FALSE}
-PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19", dateAdded = "OLD-DATE")
+```{r}
+PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19.rda", dateAdded = "2019-09-25")
 ```

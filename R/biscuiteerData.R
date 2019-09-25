@@ -20,8 +20,8 @@
 #' @examples
 #'
 #'   Zhou_solo_WCGW_inCommonPMDs.hg19 <-
-#'       biscuiteerDataGet("Zhou_solo_WCGW_inCommonPMDs.hg19")
-#'   PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19")
+#'       biscuiteerDataGet("Zhou_solo_WCGW_inCommonPMDs.hg19.rda")
+#'   PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19.rda")
 #'
 #' @keywords DataImport MethylSeq DNAMethylation EpigeneticsWorkflow
 #' @keywords Biscuit ExperimentData

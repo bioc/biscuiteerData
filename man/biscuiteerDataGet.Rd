@@ -4,13 +4,13 @@
 \alias{biscuiteerDataGet}
 \title{Retrieve biscuiteer data}
 \usage{
-biscuiteerDataGet(title, dateAdded = "2019-09-19", verbose = FALSE)
+biscuiteerDataGet(title, dateAdded = "2019-09-25", verbose = FALSE)
 }
 \arguments{
 \item{title}{Title of the data}
 
 \item{dateAdded}{Version of the data (given by the date added)
-(DEFAULT: "2019-09-19")}
+(DEFAULT: "2019-09-25")}
 
 \item{verbose}{Whether to output ExperimentHub message (DEFAULT: FALSE)}
 }
@@ -23,6 +23,6 @@ Retrieve biscuiteer data
 }
 \examples{
 
-  wcgws <- bisuiteerDataGet("Zhou_solo_WCGW_inCommonPMDs.hg19")
+  wcgws <- biscuiteerDataGet("Zhou_solo_WCGW_inCommonPMDs.hg19.rda")
 
 }
