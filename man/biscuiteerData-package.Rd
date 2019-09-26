@@ -12,8 +12,8 @@ A handful of datasets to be used in biscuiteer
 \examples{
 
   Zhou_solo_WCGW_inCommonPMDs.hg19 <-
-      biscuiteerDataGet("Zhou_solo_WCGW_inCommonPMDs.hg19")
-  PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19")
+      biscuiteerDataGet("Zhou_solo_WCGW_inCommonPMDs.hg19.rda")
+  PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19.rda")
 
 }
 \seealso{
@@ -26,9 +26,13 @@ Useful links:
 }
 \author{
 Timothy J Triche Jr \email{Tim.Triche@vai.org},
+
 Wanding Zhou \email{Wanding.Zhou@vai.org},
+
 Ben Johnson \email{Ben.Johnson@vai.org},
+
 Jacob Morrison \email{Jacob.Morrison@vai.org},
+
 Lyong Heo \email{Lyong.Heo@vai.org}
 }
 \keyword{Biscuit}

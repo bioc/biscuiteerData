@@ -1,7 +1,7 @@
 ---
 title: "BiscuiteerData User Guide"
-data: "20 September 2019"
-package: "biscuiteerData 0.99.1"
+data: "25 September 2019"
+package: "biscuiteerData 0.99.0"
 output:
   BiocStyle::html_document:
     highlight: pygments
@@ -46,13 +46,86 @@ BiocManager::install("trichelab/biscuiteerData")
 
 ```r
 library(biscuiteerData)
-PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19")
+```
+
+```
+## Loading required package: ExperimentHub
+```
+
+```
+## Loading required package: BiocGenerics
+```
+
+```
+## Loading required package: parallel
+```
+
+```
+## 
+## Attaching package: 'BiocGenerics'
+```
+
+```
+## The following objects are masked from 'package:parallel':
+## 
+##     clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+##     clusterExport, clusterMap, parApply, parCapply, parLapply,
+##     parLapplyLB, parRapply, parSapply, parSapplyLB
+```
+
+```
+## The following objects are masked from 'package:stats':
+## 
+##     IQR, mad, sd, var, xtabs
+```
+
+```
+## The following objects are masked from 'package:base':
+## 
+##     anyDuplicated, append, as.data.frame, basename, cbind,
+##     colnames, dirname, do.call, duplicated, eval, evalq, Filter,
+##     Find, get, grep, grepl, intersect, is.unsorted, lapply, Map,
+##     mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+##     pmin.int, Position, rank, rbind, Reduce, rownames, sapply,
+##     setdiff, sort, table, tapply, union, unique, unsplit, which,
+##     which.max, which.min
+```
+
+```
+## Loading required package: AnnotationHub
+```
+
+```
+## Loading required package: BiocFileCache
+```
+
+```
+## Loading required package: dbplyr
+```
+
+```
+## Loading biscuiteerData.
+```
+
+```r
+PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19.rda")
 ```
 
 A list of the titles for the available data can be retrieved via:
 
 ```r
 biscuiteerDataList()
+```
+
+```
+## snapshotDate(): 2019-09-25
+```
+
+```
+## [1] "Zhou_solo_WCGW_inCommonPMDs.hg19.rda"
+## [2] "PMDs.hg19.rda"                       
+## [3] "Zhou_solo_WCGW_inCommonPMDs.hg38.rda"
+## [4] "PMDs.hg38.rda"
 ```
 
 A list of all versions (where the versions are the dates uploaded) is produced
@@ -62,9 +135,17 @@ via:
 biscuiteerDataListDates()
 ```
 
+```
+## snapshotDate(): 2019-09-25
+```
+
+```
+## [1] "2019-09-25"
+```
+
 An older version of the data can be retrieved using the `dateAdded` argument of
 `biscuiteerDataGet`:
 
 ```r
-PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19", dateAdded = "OLD-DATE")
+PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19.rda", dateAdded = "2019-09-25")
 ```

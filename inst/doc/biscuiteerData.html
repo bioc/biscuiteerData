@@ -230,12 +230,71 @@ BiocManager::install(&quot;trichelab/biscuiteerData&quot;)
 <p><code>biscuiteerData</code> data is accessible using the <code>biscuiteerDataGet</code> function:</p>
 
 <pre><code class="r">library(biscuiteerData)
-PMDs.hg19 &lt;- biscuiteerDataGet(&quot;PMDs.hg19&quot;)
+</code></pre>
+
+<pre><code>## Loading required package: ExperimentHub
+</code></pre>
+
+<pre><code>## Loading required package: BiocGenerics
+</code></pre>
+
+<pre><code>## Loading required package: parallel
+</code></pre>
+
+<pre><code>## 
+## Attaching package: &#39;BiocGenerics&#39;
+</code></pre>
+
+<pre><code>## The following objects are masked from &#39;package:parallel&#39;:
+## 
+##     clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+##     clusterExport, clusterMap, parApply, parCapply, parLapply,
+##     parLapplyLB, parRapply, parSapply, parSapplyLB
+</code></pre>
+
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     IQR, mad, sd, var, xtabs
+</code></pre>
+
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     anyDuplicated, append, as.data.frame, basename, cbind,
+##     colnames, dirname, do.call, duplicated, eval, evalq, Filter,
+##     Find, get, grep, grepl, intersect, is.unsorted, lapply, Map,
+##     mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+##     pmin.int, Position, rank, rbind, Reduce, rownames, sapply,
+##     setdiff, sort, table, tapply, union, unique, unsplit, which,
+##     which.max, which.min
+</code></pre>
+
+<pre><code>## Loading required package: AnnotationHub
+</code></pre>
+
+<pre><code>## Loading required package: BiocFileCache
+</code></pre>
+
+<pre><code>## Loading required package: dbplyr
+</code></pre>
+
+<pre><code>## Loading biscuiteerData.
+</code></pre>
+
+<pre><code class="r">PMDs.hg19 &lt;- biscuiteerDataGet(&quot;PMDs.hg19.rda&quot;)
 </code></pre>
 
 <p>A list of the titles for the available data can be retrieved via:</p>
 
 <pre><code class="r">biscuiteerDataList()
+</code></pre>
+
+<pre><code>## snapshotDate(): 2019-09-25
+</code></pre>
+
+<pre><code>## [1] &quot;Zhou_solo_WCGW_inCommonPMDs.hg19.rda&quot;
+## [2] &quot;PMDs.hg19.rda&quot;                       
+## [3] &quot;Zhou_solo_WCGW_inCommonPMDs.hg38.rda&quot;
+## [4] &quot;PMDs.hg38.rda&quot;
 </code></pre>
 
 <p>A list of all versions (where the versions are the dates uploaded) is produced
@@ -244,10 +303,16 @@ via:</p>
 <pre><code class="r">biscuiteerDataListDates()
 </code></pre>
 
+<pre><code>## snapshotDate(): 2019-09-25
+</code></pre>
+
+<pre><code>## [1] &quot;2019-09-25&quot;
+</code></pre>
+
 <p>An older version of the data can be retrieved using the <code>dateAdded</code> argument of
 <code>biscuiteerDataGet</code>:</p>
 
-<pre><code class="r">PMDs.hg19 &lt;- biscuiteerDataGet(&quot;PMDs.hg19&quot;, dateAdded = &quot;OLD-DATE&quot;)
+<pre><code class="r">PMDs.hg19 &lt;- biscuiteerDataGet(&quot;PMDs.hg19.rda&quot;, dateAdded = &quot;2019-09-25&quot;)
 </code></pre>
 
 </body>

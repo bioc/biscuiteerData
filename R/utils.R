@@ -4,7 +4,7 @@ cacheEnv <- new.env()
 #'
 #' @param title      Title of the data
 #' @param dateAdded  Version of the data (given by the date added)
-#'                   (DEFAULT: "2019-09-23")
+#'                   (DEFAULT: "2019-09-25")
 #' @param verbose    Whether to output ExperimentHub message (DEFAULT: FALSE)
 #'
 #' @return           Data object
@@ -14,12 +14,12 @@ cacheEnv <- new.env()
 #'
 #' @examples
 #'
-#'   wcgws <- bisuiteerDataGet("Zhou_solo_WCGW_inCommonPMDs.hg19")
+#'   wcgws <- biscuiteerDataGet("Zhou_solo_WCGW_inCommonPMDs.hg19.rda")
 #'
 #' @export
 #'
 biscuiteerDataGet <- function(title,
-                              dateAdded = "2019-09-23",
+                              dateAdded = "2019-09-25",
                               verbose = FALSE) {
     if (verbose) {
         .biscuiteerDataGet(title, dateAdded = dateAdded)
@@ -48,7 +48,7 @@ biscuiteerDataGet <- function(title,
                 cache(eh[obj_id])
                 assign(key, eh[[obj_id]], envir = cacheEnv)
             } else {
-                stop(key, "doesn't exist. Try: biscuiteerDataCacheAll(",
+                stop(key, " doesn't exist. Try: biscuiteerDataCacheAll(",
                      dateAdded, ").")
             }
         }
