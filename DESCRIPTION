@@ -3,7 +3,7 @@ Type: Package
 Title: Data Package for Biscuiteer
 Description: Contains default datasets used by the Bioconductor
              package biscuiteer.
-Version: 0.99.0
+Version: 0.99.1
 Date: 2019-09-18
 Author: Tim Triche, Jr. [aut, cre], Wanding Zhou [aut], Ben Johnson [aut],
         Jacob Morrison [aut], Lyong Heo [aut]
@@ -14,8 +14,7 @@ Depends: R (>= 3.6.0),
 Imports: AnnotationHub,
          utils,
          curl
-Suggests: knitr,
-          biscuiteer
+Suggests: knitr
 LazyData: true
 biocViews: ExperimentHub, ExperimentData, Genome, Homo_sapiens_Data
 Encoding: UTF-8
