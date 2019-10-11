@@ -7,4 +7,9 @@
 \description{
 Common PMD locations in hg38 genome
 }
+\details{
+Source URL: http://zwdzwd.io/pmd/PMD_coordinates_hg38.bed.gz
+Source type: BED file
+Return type: GRanges
+}
 \keyword{data}

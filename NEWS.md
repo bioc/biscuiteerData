@@ -1,3 +1,10 @@
-## biscuiteerData 0.99.00
+Package: biscuiteerData
+=======================
 
-* Initial commit to Bioconductor
+Version: 1.0.0 [2019-10-11]
+
+CHANGES:
+
+  o Package added to Bioconductor
+
+  o Package created
