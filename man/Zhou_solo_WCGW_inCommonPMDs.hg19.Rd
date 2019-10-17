@@ -7,4 +7,9 @@
 \description{
 Solo WCGWs living in hg19 common PMDs
 }
+\details{
+Source URL: http://zwdzwd.io/pmd/solo_WCGW_inCommonPMDs_hg19.bed.gz
+Source type: BED file
+Return type: GRanges
+}
 \keyword{data}
