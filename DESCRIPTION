@@ -3,8 +3,8 @@ Type: Package
 Title: Data Package for Biscuiteer
 Description: Contains default datasets used by the Bioconductor
              package biscuiteer.
-Version: 1.7.1
-Date: 2021-06-29
+Version: 1.7.2
+Date: 2021-06-30
 Author: Tim Triche, Jr. [aut, cre], Wanding Zhou [aut], Ben Johnson [aut],
         Jacob Morrison [aut], Lyong Heo [aut]
 Maintainer: "Jacob Morrison" <jacob.morrison@vai.org>
@@ -14,7 +14,9 @@ Depends: R (>= 3.6.0),
 Imports: AnnotationHub,
          utils,
          curl
-Suggests: rmarkdown
+Suggests: knitr,
+          rmarkdown,
+          markdown
 biocViews: ExperimentHub, ExperimentData, Genome, Homo_sapiens_Data
 Encoding: UTF-8
 RoxygenNote: 6.1.1
