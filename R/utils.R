@@ -11,6 +11,7 @@ cacheEnv <- new.env()
 #'
 #' @import ExperimentHub
 #' @import AnnotationHub
+#' @import GenomicRanges
 #'
 #' @examples
 #'
