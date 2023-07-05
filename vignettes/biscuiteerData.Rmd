@@ -1,9 +1,8 @@
 ---
 title: "BiscuiteerData User Guide"
-data: "`r BiocStyle::doc_date()`"
-package: "`r BiocStyle::pkg_ver('biscuiteerData')`"
+date: "`r format(Sys.time(), '%d %b %Y')`"
 output:
-  BiocStyle::html_document:
+  html_document:
     highlight: pygments
     toc_float: true
     fig_width: 8
