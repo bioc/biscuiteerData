@@ -3,7 +3,7 @@ Type: Package
 Title: Data Package for Biscuiteer
 Description: Contains default datasets used by the Bioconductor
              package biscuiteer.
-Version: 1.17.0
+Version: 1.18.0
 Date: 2023-07-05
 Author: Tim Triche, Jr. [aut, cre], Wanding Zhou [aut], Ben Johnson [aut],
         Jacob Morrison [aut], Lyong Heo [aut]
