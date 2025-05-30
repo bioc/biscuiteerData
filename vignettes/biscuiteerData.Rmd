@@ -39,9 +39,14 @@ BiocManager::install("trichelab/biscuiteerData")
 
 # Usage
 
-`biscuiteerData` data is accessible using the `biscuiteerDataGet` function:
+Loading the library for the first time should cache the associated data files.
+After the initial library load, future loads will skip the cache step.
 ```{r}
 library(biscuiteerData)
+```
+
+`biscuiteerData` data is accessible using the `biscuiteerDataGet` function:
+```{r, eval=FALSE}
 PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19.rda")
 ```
 
@@ -58,6 +63,6 @@ biscuiteerDataListDates()
 
 An older version of the data can be retrieved using the `dateAdded` argument of
 `biscuiteerDataGet`:
-```{r}
+```{r, eval=FALSE}
 PMDs.hg19 <- biscuiteerDataGet("PMDs.hg19.rda", dateAdded = "2019-09-25")
 ```
